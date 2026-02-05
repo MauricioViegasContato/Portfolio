@@ -4,6 +4,7 @@ import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Menu, X } from 'lucide-react';
 import Link from 'next/link';
+import { usePathname } from 'next/navigation';
 import Image from 'next/image';
 import { cn } from '@/lib/utils';
 
@@ -16,27 +17,41 @@ export default function Header() {
     const { language, setLanguage, t } = useLanguage();
 
     const navLinks = [
-        { name: t.nav.about, href: '#about' },
-        { name: t.nav.work, href: '#projects' },
-        { name: t.nav.contact, href: '#contact' },
+        { name: t.nav.home, href: '/' },
+        { name: t.nav.about, href: '/about' },
+        { name: t.nav.work, href: '/work' },
+        { name: t.nav.contact, href: '/contact' },
     ];
 
+    const pathname = usePathname();
+
+    const handleLogoClick = (e: React.MouseEvent) => {
+        e.preventDefault();
+        sessionStorage.removeItem('hasSeenPreloader');
+        window.location.href = '/';
+    };
+
     useEffect(() => {
-        // Sync with Preloader duration (9s)
-        const timer = setTimeout(() => {
+        const hasSeen = sessionStorage.getItem('hasSeenPreloader');
+        const isHome = pathname === '/';
+
+        if (hasSeen || !isHome) {
             setIsVisible(true);
-        }, 9000);
+        } else {
+            // Sync with Preloader duration (9s) only on Home
+            const timer = setTimeout(() => {
+                setIsVisible(true);
+            }, 9000);
+            return () => clearTimeout(timer);
+        }
 
         const handleScroll = () => {
             setIsScrolled(window.scrollY > 50);
         };
 
         window.addEventListener('scroll', handleScroll);
-        return () => {
-            window.removeEventListener('scroll', handleScroll);
-            clearTimeout(timer);
-        };
-    }, []);
+        return () => window.removeEventListener('scroll', handleScroll);
+    }, [pathname]);
 
     return (
         <AnimatePresence>
@@ -54,7 +69,7 @@ export default function Header() {
                     >
                         <div className="w-full px-6 md:px-12 flex items-center justify-between">
                             {/* Logo */}
-                            <Link href="/" className="block">
+                            <Link href="/" className="block" onClick={handleLogoClick}>
                                 <Image
                                     src="/logo.png"
                                     alt="Logo"

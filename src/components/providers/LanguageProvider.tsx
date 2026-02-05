@@ -6,6 +6,7 @@ type Language = 'en' | 'pt';
 
 type Translations = {
     nav: {
+        home: string;
         about: string;
         work: string;
         contact: string;
@@ -21,6 +22,23 @@ type Translations = {
         ongoing: string;
         commits: string;
     };
+    about: {
+        title: string;
+        story: string;
+        traits: string;
+        goal: string;
+        cta: string;
+    };
+    contact: {
+        title: string;
+        email: string;
+        phone: string;
+        linkedin: string;
+        github: string;
+        cta_title: string;
+        cta_desc: string;
+        cta_button: string;
+    };
     projects: {
         title: string;
         p1: { title: string; description: string; };
@@ -32,6 +50,7 @@ type Translations = {
 const translations: Record<Language, Translations> = {
     en: {
         nav: {
+            home: 'Home',
             about: 'About',
             work: 'Work',
             contact: 'Contact',
@@ -39,13 +58,30 @@ const translations: Record<Language, Translations> = {
         hero: {
             designer: 'designer.',
             coder: '<coder />',
-            description: 'Front end developer who writes clean <br /> elegant and efficient code.',
+            description: 'Java Backend Developer building robust systems <br /> & Motion Designer creating visual impact.',
         },
         stats: {
             experience: 'Years Experience',
             finished: 'Finished Projects',
             ongoing: 'Projects in Progress',
             commits: 'Commits',
+        },
+        about: {
+            title: 'About Me',
+            story: "I'm Mauricio Viégas, a Computer Science student and former IT Soldier at the Brazilian Air Force (FAB). My background in military discipline combined with my passion for creative coding allows me to build systems that are both robust and visually striking. I started programming to create my own worlds, and today I turn that curiosity into professional software.",
+            traits: 'Discipline, adaptability, and problem-solving are in my DNA. From assembling hardware to architecting cloud-integrated apps with Dart and Flutter, I handle the full spectrum of technology. I speak Intermediate French and Intermediate English.',
+            goal: 'My goal is to specialize in Backend Development (Java Spring) while leveraging my Motion Design skills to understand the complete user experience.',
+            cta: "Download CV"
+        },
+        contact: {
+            title: 'Get In Touch',
+            email: 'Email',
+            phone: 'Phone',
+            linkedin: 'LinkedIn',
+            github: 'GitHub',
+            cta_title: "Let's build something amazing together.",
+            cta_desc: "I'm currently available for freelance projects and full-time opportunities.",
+            cta_button: "Send me a message"
         },
         projects: {
             title: 'Selected Work',
@@ -65,6 +101,7 @@ const translations: Record<Language, Translations> = {
     },
     pt: {
         nav: {
+            home: 'Início',
             about: 'Sobre',
             work: 'Projetos',
             contact: 'Contato',
@@ -72,13 +109,30 @@ const translations: Record<Language, Translations> = {
         hero: {
             designer: 'designer.',
             coder: '<coder />',
-            description: 'Desenvolvedor Front-end que escreve  <br /> código limpo, elegante e eficiente.',
+            description: 'Desenvolvedor Java Backend construindo sistemas robustos <br /> & Motion Designer criando impacto visual.',
         },
         stats: {
             experience: 'Anos de Experiência',
             finished: 'Projetos Concluídos',
             ongoing: 'Projetos em Andamento',
             commits: 'Contribuições',
+        },
+        about: {
+            title: 'Sobre Mim',
+            story: "Sou Mauricio Viégas, estudante de Ciência da Computação e ex-soldado em TI da Força Aérea Brasileira (FAB). Minha formação militar me trouxe disciplina e resiliência, que hoje aplico no desenvolvimento de software. Comecei na programação para criar meus próprios projetos e hoje transformo essa curiosidade em soluções profissionais.",
+            traits: 'Disciplina, adaptabilidade e resolução de problemas estão no meu DNA. Da montagem de hardware à arquitetura de apps integrados com Dart e Flutter, domino o espectro completo da tecnologia. Falo francês intermediário e inglês intermediário.',
+            goal: 'Meu foco é o Desenvolvimento Backend (Java Spring), mas uso minha bagagem em Motion Design para garantir que a experiência final seja impecável.',
+            cta: "Baixar Currículo"
+        },
+        contact: {
+            title: 'Vamos Conversar',
+            email: 'E-mail',
+            phone: 'Telefone',
+            linkedin: 'LinkedIn',
+            github: 'GitHub',
+            cta_title: "Vamos construir algo incrível juntos.",
+            cta_desc: "Estou disponível para projetos freelance e oportunidades em tempo integral.",
+            cta_button: "Me envie uma mensagem"
         },
         projects: {
             title: 'Trabalhos Selecionados',

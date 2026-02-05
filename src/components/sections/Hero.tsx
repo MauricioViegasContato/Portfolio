@@ -95,12 +95,12 @@ export default function Hero() {
                         x: parallaxX
                     }}
                 >
-                    <div className="text-4xl font-bold absolute bottom-[30%] left-[34%] bg-gradient-to-r from-red-500 via-yellow-500 to-green-500 text-transparent bg-clip-text text-right">Ps Ai Id</div>
-                    <div className="text-sm absolute bottom-[25%] left-[33%] bg-gradient-to-r from-red-500 via-yellow-500 to-green-500 text-transparent bg-clip-text">FIGMA</div>
-                    <div className="text-xs absolute bottom-[21%] left-[36%] bg-gradient-to-r from-red-500 via-yellow-500 to-green-500 text-transparent bg-clip-text">#FF0055</div>
-                    <div className="text-base absolute bottom-[17%] left-[30%] bg-gradient-to-r from-red-500 via-yellow-500 to-green-500 text-transparent bg-clip-text">Vector</div>
-                    <div className="text-xs absolute bottom-[12%] left-[38%] bg-gradient-to-r from-red-500 via-yellow-500 to-green-500 text-transparent bg-clip-text">CMYK / RGB</div>
-                    <div className="text-5xl font-bold absolute bottom-[1%] left-[30%] bg-gradient-to-r from-red-500 via-yellow-500 to-green-500 text-transparent bg-clip-text text-right">UX/UI</div>
+                    <div className="text-4xl font-bold absolute bottom-[30%] left-[34%] bg-gradient-to-r from-red-500 via-yellow-500 to-green-500 text-transparent bg-clip-text text-right">Ae Pr Ps</div>
+                    <div className="text-sm absolute bottom-[25%] left-[33%] bg-gradient-to-r from-red-500 via-yellow-500 to-green-500 text-transparent bg-clip-text">MOTION</div>
+                    <div className="text-xs absolute bottom-[21%] left-[36%] bg-gradient-to-r from-red-500 via-yellow-500 to-green-500 text-transparent bg-clip-text">Keyframes</div>
+                    <div className="text-base absolute bottom-[17%] left-[30%] bg-gradient-to-r from-red-500 via-yellow-500 to-green-500 text-transparent bg-clip-text">Render</div>
+                    <div className="text-xs absolute bottom-[12%] left-[38%] bg-gradient-to-r from-red-500 via-yellow-500 to-green-500 text-transparent bg-clip-text">1080p / 4K</div>
+                    <div className="text-5xl font-bold absolute bottom-[1%] left-[30%] bg-gradient-to-r from-red-500 via-yellow-500 to-green-500 text-transparent bg-clip-text text-right">VFX</div>
                 </motion.div>
 
 
@@ -144,18 +144,18 @@ export default function Hero() {
                     }}
                 >
                     {/* Existing Right-Side items - Moved to shoulder/chest area */}
-                    <div className="text-4xl font-bold opacity-60 absolute bottom-[40%] right-[31%] text-left">CSS3 HTML5</div>
-                    <div className="text-sm absolute bottom-[36%] right-[38%] opacity-60">&lt;html&gt;</div>
-                    <div className="text-xs absolute bottom-[33%] right-[31%] opacity-60">{'{ height: 100%; }'}</div>
-                    <div className="text-base absolute bottom-[28%] right-[32%] opacity-60">&lt;div class="creative"&gt;</div>
-                    <div className="text-xs absolute bottom-[25%] right-[29%] opacity-60">color: #00f0ff;</div>
-                    <div className="text-5xl font-bold opacity-60 absolute bottom-[9%] right-[35%] text-left">REACT</div>
+                    <div className="text-4xl font-bold opacity-60 absolute bottom-[40%] right-[29%] text-left">JAVA SPRING</div>
+                    <div className="text-sm absolute bottom-[36%] right-[38%] opacity-60">@Service</div>
+                    <div className="text-xs absolute bottom-[33%] right-[31%] opacity-60">{'{ return new ResponseEntity<>() }'}</div>
+                    <div className="text-base absolute bottom-[28%] right-[32%] opacity-60">List&lt;User&gt;</div>
+                    <div className="text-xs absolute bottom-[25%] right-[29%] opacity-60">@Autowired</div>
+                    <div className="text-5xl font-bold opacity-60 absolute bottom-[9%] right-[33%] text-left">BACKEND</div>
 
                     {/* NEW: Shoulder/Center items - Interleaved */}
-                    <div className="text-sm absolute bottom-[7%] right-[30%] opacity-60">const dev = true;</div>
-                    <div className="text-xs absolute bottom-[5%] right-[32%] opacity-60">console.log("Hello");</div>
+                    <div className="text-sm absolute bottom-[7%] right-[30%] opacity-60">public class Dev</div>
+                    <div className="text-xs absolute bottom-[5%] right-[32%] opacity-60">System.out.println("Hello");</div>
                     <div className="text-lg absolute bottom-[3%] right-[30%] opacity-60">{"=>"}</div>
-                    <div className="text-xs absolute bottom-[1%] right-[33%] opacity-60">npm run dev</div>
+                    <div className="text-xs absolute bottom-[1%] right-[33%] opacity-60">mvn clean install</div>
                 </motion.div>
 
 
