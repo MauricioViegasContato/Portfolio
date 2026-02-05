@@ -78,7 +78,7 @@ export default function Hero() {
                 <motion.div
                     className="absolute bottom-0 left-0 w-screen h-full bg-no-repeat z-20"
                     style={{
-                        backgroundImage: "url('/boneco-design.png')",
+                        backgroundImage: "url('/Boneco-design.png')",
                         backgroundSize: 'auto 100%',
                         backgroundPosition: 'center bottom',
                         transform: 'scale(1.05)',
@@ -124,7 +124,7 @@ export default function Hero() {
                 <motion.div
                     className="absolute bottom-0 right-0 w-screen h-full bg-no-repeat z-20"
                     style={{
-                        backgroundImage: "url('/boneco-coder.png')",
+                        backgroundImage: "url('/Boneco-coder.png')",
                         backgroundSize: 'auto 100%',
                         backgroundPosition: 'center bottom',
                         transform: 'scale(1.05)',
