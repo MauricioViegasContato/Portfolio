@@ -29,7 +29,7 @@ export default function Projects() {
         {
             title: t.projects.p3.title,
             description: t.projects.p3.description,
-            image: "/macbook_mockup.png",
+            image: "/coming-soon.png",
             tags: ["OpenAI", "Gamification", "Speech API"]
         },
     ];

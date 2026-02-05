@@ -59,6 +59,15 @@ A Vercel geralmente detecta que é um projeto Next.js automaticamente.
 ## Dica Pro: Atualizações Automáticas
 Como você conectou com o GitHub, toda vez que você fizer um `git push` para subir uma alteração no código, a Vercel vai detectar e atualizar o site sozinha em minutos!
 
+## Dica: Como deixar o link bonito (Grátis)
+O Vercel cria um nome aleatório (tipo `projeto-xyz.vercel.app`), mas você pode mudar de graça!
+
+1. Na Vercel, entre no seu projeto.
+2. Vá em **Settings** (Configurações) -> **Domains** (Domínios).
+3. Você verá o domínio atual. Clique em **Edit** (Editar).
+4. Mude para algo como `mauricioviegas.vercel.app`.
+5. Se estiver disponível, é seu!
+
 ## Dúvida Comum: "Preciso pagar para ter .com?"
 - **Hospedagem (Onde o site mora):** GRÁTIS na Vercel.
 - **Endereço (O nome do site):**

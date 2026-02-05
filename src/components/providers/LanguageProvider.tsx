@@ -59,7 +59,7 @@ const translations: Record<Language, Translations> = {
             },
             p3: {
                 title: 'AI English Coach',
-                description: 'Conversation training app featuring AI roleplay, pronunciation correction, and gamified progression (streaks, shop). Inspired by Praktika and Duolingo.'
+                description: 'Conversation training app featuring AI roleplay, pronunciation correction, and gamified progression (streaks, shop).'
             },
         },
     },
@@ -88,7 +88,7 @@ const translations: Record<Language, Translations> = {
             },
             p2: {
                 title: 'Gestão de Arquitetura & Obras',
-                description: 'Plataforma mobile com interfaces para arquitetos e clientes. Inclui acompanhamento de obras em tempo real, financeiro, cronogramas e feed social estilo Instagram.'
+                description: 'Plataforma mobile com interfaces para arquitetos e clientes. Inclui acompanhamento de obras em tempo real, financeiro, cronogramas e feed social.'
             },
             p3: {
                 title: 'Coach de Inglês com IA',
