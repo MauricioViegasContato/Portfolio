@@ -10,7 +10,7 @@ export default function Stats() {
     const { t } = useLanguage();
 
     const stats = [
-        { label: t.stats.experience, value: 1, suffix: '+' },
+        { label: t.stats.experience, value: 2, suffix: '+' },
         { label: t.stats.finished, value: 2 },
         { label: t.stats.ongoing, value: 1 },
         { label: t.stats.commits, value: 500, suffix: '+' },
