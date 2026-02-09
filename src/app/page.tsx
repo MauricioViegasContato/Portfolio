@@ -11,10 +11,7 @@ export default function Home() {
       <Stats />
       <Projects />
 
-      {/* Spacer for scroll feeling */}
-      <div className="h-[50vh] flex items-center justify-center text-gray-800">
-        More content coming soon...
-      </div>
+
     </main>
   );
 }

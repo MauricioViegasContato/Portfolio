@@ -1,6 +1,7 @@
 'use client';
 
 import Image from 'next/image';
+import Link from 'next/link';
 import ScrollAnimationWrapper from '../ui/ScrollAnimationWrapper';
 import { ExternalLink, Github } from 'lucide-react';
 
@@ -11,26 +12,30 @@ export default function Projects() {
 
     const projects = [
         {
+            id: "mpk",
             title: t.projects.p1.title,
             description: t.projects.p1.description,
             image: "/macbook_mockup.png",
             video: "/MPK.mp4",
             tags: ["Flutter", "Supabase", "Dart"],
-            githubUrl: "https://github.com/MauricioViegasContato/Franquias-MPK-v2.git"
+            githubUrl: "https://github.com/MauricioViegasContato/MPK-Template.git"
         },
         {
+            id: "jolo",
             title: t.projects.p2.title,
             description: t.projects.p2.description,
             image: "/macbook_mockup.png",
             video: "Jolo.mp4",
             tags: ["Flutter", "Firebase", "Dart"],
-            githubUrl: "https://github.com/MauricioViegasContato/Jolo.git"
+            githubUrl: "https://github.com/MauricioViegasContato/Jolo-Template.git"
         },
         {
+            id: "fluentia",
             title: t.projects.p3.title,
             description: t.projects.p3.description,
             image: "/coming-soon.png",
-            tags: ["OpenAI", "Gamification", "Speech API"]
+            tags: ["OpenAI", "Gamification", "Speech API"],
+            githubUrl: "https://github.com/MauricioViegasContato/FluentIA-Template.git"
         },
     ];
 
@@ -57,6 +62,7 @@ export default function Projects() {
 }
 
 interface ProjectProps {
+    id: string;
     title: string;
     description: string;
     image: string;
@@ -66,7 +72,7 @@ interface ProjectProps {
     index: number;
 }
 
-function ProjectCard({ title, description, image, video, tags, githubUrl, index }: ProjectProps) {
+function ProjectCard({ id, title, description, image, video, tags, githubUrl, index }: ProjectProps) {
     return (
         <ScrollAnimationWrapper delay={index * 0.2}>
             <div className="group relative">
@@ -113,9 +119,12 @@ function ProjectCard({ title, description, image, video, tags, githubUrl, index 
                     </p>
 
                     <div className="flex items-center gap-6 pt-2 opacity-60 group-hover:opacity-100 transition-opacity">
-                        <button className="flex items-center gap-2 text-white hover:text-neon-cyan font-medium border-b border-transparent hover:border-neon-cyan transition-all">
+                        <Link
+                            href={`/work/${id}`}
+                            className="flex items-center gap-2 text-white hover:text-neon-cyan font-medium border-b border-transparent hover:border-neon-cyan transition-all"
+                        >
                             Case Study <ExternalLink size={16} />
-                        </button>
+                        </Link>
 
                         {githubUrl && (
                             <a

@@ -3,6 +3,7 @@ import { Outfit } from 'next/font/google';
 import './globals.css';
 import Header from '@/components/layout/Header';
 import { LanguageProvider } from '@/components/providers/LanguageProvider';
+import SecretTerminal from '@/components/ui/SecretTerminal';
 
 const outfit = Outfit({ subsets: ['latin'] });
 
@@ -20,6 +21,7 @@ export default function RootLayout({
     <html lang="en" className="dark">
       <body className={`${outfit.className} bg-black text-white antialiased`}>
         <LanguageProvider>
+          <SecretTerminal />
           <Header />
           <main className="relative z-10">
             {children}
